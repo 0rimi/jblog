@@ -16,9 +16,9 @@ public class UserDao {
 	//회원가입
 	public int insert(UserVo userVo) {
 		System.out.println("UserDao.insert()");
-		System.out.println(userVo);
 		
 		int count = sqlSession.insert("user.insert", userVo); 
+		System.out.println(userVo);
 		System.out.println(count+"건이 저장되었습니다.");
 		
 		return count;
