@@ -13,7 +13,7 @@
 		
 		
 		<!-- 메인 해더 -->
-		
+		<c:import url="/WEB-INF/views/includes/main-header.jsp"></c:import>
 		
 		<div id="loginForm">
 			<form method="post" action="${pageContext.request.contextPath}/user/login">
@@ -46,7 +46,7 @@
 		</div>
 		
 		<!-- 메인 푸터  자리-->
-		
+		<c:import url="/WEB-INF/views/includes/main-footer.jsp"></c:import>
 		
 	</div>
 	
