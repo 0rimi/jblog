@@ -15,6 +15,10 @@ public class UserService {
 	
 	//회원가입용 : join
 	public void insert(UserVo userVo) {
+		System.out.println("userService.insert");
+		
+		//userVo를 받으면 회원가입시켜줌
+		userDao.insert(userVo);
 		
 	}
 	

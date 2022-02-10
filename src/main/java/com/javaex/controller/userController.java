@@ -31,7 +31,7 @@ public class userController {
 		//데이터값 userVo를 이용해서 회원정보 저장하는 메소드
 		userService.insert(userVo);
 		
-		return "";
+		return "user/joinSuccess";
 	}
 	
 	//로그인
