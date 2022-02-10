@@ -10,7 +10,7 @@ public class mainController {
 	public String hello() {
 		System.out.println("mainController.main");
 		
-		return "/WEB-INF/views/blog/blog-main.jsp";
+		return "blog/blog-main";
 	}
 
 }
