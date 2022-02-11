@@ -7,6 +7,7 @@
 <meta charset="UTF-8">
 <title>JBlog</title>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/jblog.css">
+<script type="text/javascript" src="${pageContext.request.contextPath}/jquery/jquery-1.12.4.js"></script>
 
 </head>
 <body>
@@ -65,5 +66,38 @@
 
 </body>
 
+<!-- 
+<script type="text/javascript">
+	
+	//아이디 중복체크
+	//클릭했을때
+	$(".btnIdCheck").click(function(){
+		
+		//userid
+	
+	});
+	
+	
+	
+	
+	$.ajax({
+		      
+	      url : "${pageContext.request.contextPath }/api/gb/add",      
+	      type : "post",
+	      contentType : "application/json",
+	      data : {name: ”홍길동"},
+
+	      dataType : "json",
+	      success : function(result){
+	         /*성공시 처리해야될 코드 작성*/
+	      },
+	      error : function(XHR, status, error) {
+	         console.error(status + " : " + error);
+	      }
+	      
+	   });
+ -->
+
+</script>
 
 </html>

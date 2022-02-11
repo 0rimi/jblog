@@ -22,4 +22,14 @@ public class UserService {
 		
 	}
 	
+	//로그인용(회원정보 주기)
+	public UserVo login(UserVo userVo) {
+		System.out.println("userService.login");
+		
+		//userVo받으면 특정정보로 회원 정보 가져다줌
+		UserVo authUser = userDao.login(userVo);
+		
+		return authUser; 
+	}
+	
 }
